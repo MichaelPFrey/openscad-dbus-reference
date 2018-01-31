@@ -73,3 +73,8 @@ void MainWindow::on_pushButtonZoomTo_clicked()
     double zoom=ui->doubleSpinBoxZoom->value();
     OpenSCAD->zoomTo(zoom);
 }
+
+void MainWindow::on_pushButtonAction_clicked()
+{
+    OpenSCAD->action(ui->comboBoxAction->currentText());
+}

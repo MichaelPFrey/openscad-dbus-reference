@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>307</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,6 +15,71 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="1">
+     <widget class="QDoubleSpinBox" name="doubleSpinBoxY">
+      <property name="minimum">
+       <double>-10000.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>10000.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2" rowspan="2">
+     <widget class="QDoubleSpinBox" name="doubleSpinBoxZoom">
+      <property name="minimum">
+       <double>-10000.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>10000.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>10.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="3">
+     <widget class="QPushButton" name="pushButtonRotate">
+      <property name="text">
+       <string>rotate</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="3">
+     <widget class="QPushButton" name="pushButtonRotateTo">
+      <property name="text">
+       <string>rotateTo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="labelY">
+      <property name="text">
+       <string>y</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="labelX">
+      <property name="text">
+       <string>x</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0" colspan="3">
+     <widget class="QPushButton" name="pushButtonTranslateTo">
+      <property name="text">
+       <string>translateTo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="3">
+     <widget class="QPushButton" name="pushButtonTranslate">
+      <property name="text">
+       <string>translate</string>
+      </property>
+     </widget>
+    </item>
     <item row="1" column="2">
      <widget class="QLabel" name="labelZ">
       <property name="text">
@@ -22,8 +87,25 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
-     <widget class="QDoubleSpinBox" name="doubleSpinBoxY">
+    <item row="8" column="0" colspan="2">
+     <widget class="QPushButton" name="pushButtonZoomTo">
+      <property name="text">
+       <string>zoomTo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QDoubleSpinBox" name="doubleSpinBoxX">
+      <property name="minimum">
+       <double>-10000.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>10000.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QDoubleSpinBox" name="doubleSpinBoxZ">
       <property name="minimum">
        <double>-10000.000000000000000</double>
       </property>
@@ -42,93 +124,47 @@
       </property>
      </widget>
     </item>
-    <item row="8" column="0" colspan="2">
-     <widget class="QPushButton" name="pushButtonZoomTo">
-      <property name="text">
-       <string>zoomTo</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="0" colspan="3">
-     <widget class="QPushButton" name="pushButtonTranslateTo">
-      <property name="text">
-       <string>translateTo</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0" colspan="3">
-     <widget class="QPushButton" name="pushButtonRotateTo">
-      <property name="text">
-       <string>rotateTo</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0" colspan="3">
-     <widget class="QPushButton" name="pushButtonTranslate">
-      <property name="text">
-       <string>translate</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0" colspan="3">
-     <widget class="QPushButton" name="pushButtonRotate">
-      <property name="text">
-       <string>rotate</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLabel" name="labelY">
-      <property name="text">
-       <string>y</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
-     <widget class="QDoubleSpinBox" name="doubleSpinBoxZ">
-      <property name="minimum">
-       <double>-10000.000000000000000</double>
-      </property>
-      <property name="maximum">
-       <double>10000.000000000000000</double>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="labelX">
-      <property name="text">
-       <string>x</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="2" rowspan="2">
-     <widget class="QDoubleSpinBox" name="doubleSpinBoxZoom">
-      <property name="minimum">
-       <double>-10000.000000000000000</double>
-      </property>
-      <property name="maximum">
-       <double>10000.000000000000000</double>
-      </property>
-      <property name="value">
-       <double>10.000000000000000</double>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QDoubleSpinBox" name="doubleSpinBoxX">
-      <property name="minimum">
-       <double>-10000.000000000000000</double>
-      </property>
-      <property name="maximum">
-       <double>10000.000000000000000</double>
-      </property>
-     </widget>
-    </item>
     <item row="7" column="0" colspan="2">
      <widget class="QPushButton" name="pushButtonZoom">
       <property name="text">
        <string>zoom</string>
       </property>
+     </widget>
+    </item>
+    <item row="9" column="2">
+     <widget class="QPushButton" name="pushButtonAction">
+      <property name="text">
+       <string>send action</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0" colspan="2">
+     <widget class="QComboBox" name="comboBoxAction">
+      <item>
+       <property name="text">
+        <string>designActionPreview</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>designActionRender</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>viewActionOrthogonal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>viewActionPerspective</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>viewActionTogglePerspective</string>
+       </property>
+      </item>
      </widget>
     </item>
    </layout>

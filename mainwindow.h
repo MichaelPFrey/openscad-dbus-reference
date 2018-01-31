@@ -29,6 +29,8 @@ private slots:
 
     void on_pushButtonZoomTo_clicked();
 
+    void on_pushButtonAction_clicked();
+
 protected:
     void timerEvent(QTimerEvent *event);
 
