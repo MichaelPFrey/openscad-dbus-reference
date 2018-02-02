@@ -78,3 +78,9 @@ void MainWindow::on_pushButtonAction_clicked()
 {
     OpenSCAD->action(ui->comboBoxAction->currentText());
 }
+
+void MainWindow::on_pushButtonActions_clicked()
+{
+    QString a = OpenSCAD->actions();
+    printf(a.toStdString().c_str());
+}
