@@ -81,7 +81,7 @@ void MainWindow::on_pushButtonAction_clicked()
 
 void MainWindow::on_pushButtonActions_clicked()
 {
-    QStringList List = OpenSCAD->actions();
+    QStringList List = OpenSCAD->getActions();
     ui->comboBoxAction->clear();
     foreach(QString item, List){
         ui->comboBoxAction->addItem(item,item);
