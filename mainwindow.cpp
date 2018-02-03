@@ -81,11 +81,9 @@ void MainWindow::on_pushButtonAction_clicked()
 
 void MainWindow::on_pushButtonActions_clicked()
 {
-    
-    QString a = OpenSCAD->actions();
-    QStringList List = a.split("\n");
+    QStringList List = OpenSCAD->actions();
     ui->comboBoxAction->clear();
     foreach(QString item, List){
-		ui->comboBoxAction->addItem(item,item);
+        ui->comboBoxAction->addItem(item,item);
     }
 }
