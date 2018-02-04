@@ -167,6 +167,13 @@
       </item>
      </widget>
     </item>
+    <item row="10" column="2">
+     <widget class="QPushButton" name="pushButtonActions">
+      <property name="text">
+       <string>get actions</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
  </widget>

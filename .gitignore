@@ -1,0 +1,9 @@
+.qmake.stash
+Makefile
+*.o
+moc_*.cpp
+moc_*.h
+ui_*.h
+*_interface.cpp
+*_interface.h
+openscad-dbus-example

@@ -78,3 +78,12 @@ void MainWindow::on_pushButtonAction_clicked()
 {
     OpenSCAD->action(ui->comboBoxAction->currentText());
 }
+
+void MainWindow::on_pushButtonActions_clicked()
+{
+    QStringList List = OpenSCAD->getActions();
+    ui->comboBoxAction->clear();
+    foreach(QString item, List){
+        ui->comboBoxAction->addItem(item,item);
+    }
+}
