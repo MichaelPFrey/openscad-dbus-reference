@@ -172,10 +172,9 @@
       <property name="text">
        <string>rotate2</string>
        </property>
-      </item>
      </widget>
     </item>
-    <item row="10" column="2">
+    <item row="11" column="2">
      <widget class="QPushButton" name="pushButtonActions">
       <property name="text">
        <string>get actions</string>
