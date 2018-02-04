@@ -33,6 +33,8 @@ private slots:
 
     void on_pushButtonAction_clicked();
 
+    void on_pushButtonActions_clicked();
+
 protected:
     void timerEvent(QTimerEvent *event);
 
