@@ -21,6 +21,8 @@ private slots:
 
     void on_pushButtonRotateTo_clicked();
 
+    void on_pushButtonRotate2_clicked();
+
     void on_pushButtonTranslate_clicked();
 
     void on_pushButtonTranslateTo_clicked();

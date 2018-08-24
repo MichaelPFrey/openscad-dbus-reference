@@ -44,6 +44,15 @@ void MainWindow::on_pushButtonRotateTo_clicked()
     OpenSCAD->rotateTo(x,y,z);
 }
 
+void MainWindow::on_pushButtonRotate2_clicked()
+{
+    double x=ui->doubleSpinBoxX->value();
+    double y=ui->doubleSpinBoxY->value();
+    double z=ui->doubleSpinBoxZ->value();
+
+    OpenSCAD->rotate2(x,y,z);
+}
+
 void MainWindow::on_pushButtonTranslate_clicked()
 {
     double x=ui->doubleSpinBoxX->value();
